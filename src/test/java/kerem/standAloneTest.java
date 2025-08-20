@@ -58,7 +58,6 @@ public class standAloneTest {
 
         driver.findElement(By.id("loginButton")).click();
 
-        // Direkt email ve password hata mesajlarını al
         WebElement emailError = driver.findElement(By.cssSelector("div[data-errormessagefor='email']"));
         WebElement passwordError = driver.findElement(By.cssSelector("div[data-errormessagefor='password']"));
 
