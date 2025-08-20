@@ -7,6 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class N11LoginPage extends BasePage {
 
+    public N11LoginPage(WebDriver driver) {
+        super(driver);
+        PageFactory.initElements(driver, this);
+    }
+
+
     @FindBy(id = "loginButton")
     private WebElement loginButton;
 
@@ -15,11 +21,6 @@ public class N11LoginPage extends BasePage {
 
     @FindBy(css = "div[data-errormessagefor='password']")
     private WebElement passwordErrorMessage;
-
-    public N11LoginPage(WebDriver driver) {
-        super(driver);
-        PageFactory.initElements(driver, this);
-    }
 
     public void clickLoginButton() {
         clickElement(loginButton);

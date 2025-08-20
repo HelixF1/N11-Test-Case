@@ -34,6 +34,7 @@ public class N11TestCase {
     
     @Test
     public void n11TestScenario() {
+
         homePage.openHomePage();
         homePage.closeLocationPopup();
 

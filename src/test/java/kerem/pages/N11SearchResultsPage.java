@@ -9,14 +9,16 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class N11SearchResultsPage extends BasePage {
-    
-    @FindBy(css = "img.cardImage")
-    private List<WebElement> productImages;
-    
+
     public N11SearchResultsPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
     }
+
+
+    @FindBy(css = "img.cardImage")
+    private List<WebElement> productImages;
+
 
     public void clickThirdProduct() {
         waitForElementToBeVisible(productImages.get(2));

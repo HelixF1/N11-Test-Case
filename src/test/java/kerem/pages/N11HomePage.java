@@ -8,19 +8,19 @@ import org.openqa.selenium.support.PageFactory;
 
 public class N11HomePage extends BasePage {
     
-    @FindBy(id = "myLocation-close-info")
-    private WebElement locationCloseButton;
-    
-    @FindBy(id = "searchData")
-    private WebElement searchBox;
-    
-    @FindBy(css = "div[class='resultText '] h1")
-    private WebElement searchResultTitle;
-    
     public N11HomePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
     }
+
+    @FindBy(id = "myLocation-close-info")
+    private WebElement locationCloseButton;
+
+    @FindBy(id = "searchData")
+    private WebElement searchBox;
+
+    @FindBy(css = "div[class='resultText '] h1")
+    private WebElement searchResultTitle;
     
     public void openHomePage() {
         driver.get("https://www.n11.com/");
