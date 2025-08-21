@@ -1,10 +1,11 @@
 package com.n11.test.pages;
 
+import com.n11.test.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import static com.n11.test.tests.BaseTest.getDriver;
-import static java.sql.DriverManager.getDriver;
+import static com.n11.test.base.BaseTest.getDriver;
+
 
 public class N11LoginPage extends BasePage {
 

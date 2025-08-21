@@ -1,14 +1,14 @@
-package com.n11.test.pages;
-
-import java.time.Duration;
+package com.n11.test.base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static com.n11.test.tests.BaseTest.getDriver;
-import static java.sql.DriverManager.getDriver;
+import java.time.Duration;
+
+import static com.n11.test.base.BaseTest.getDriver;
+
 
 public abstract class BasePage {
 
@@ -18,7 +18,7 @@ public abstract class BasePage {
         return new WebDriverWait(getDriver(), Duration.ofSeconds(10));
     }
 
-    By searchBox = By.id("searchData");
+    public By searchBox = By.id("searchData");
 
     By basketIcon = By.className("basketTotalNum");
 

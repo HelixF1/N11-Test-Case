@@ -1,17 +1,15 @@
 package com.n11.test.tests;
 
+import com.n11.test.base.BaseTest;
 import com.n11.test.pages.N11BasketPage;
 import com.n11.test.pages.N11LoginPage;
 import com.n11.test.pages.N11ProductPage;
 import com.n11.test.pages.N11SearchResultsPage;
 import org.testng.annotations.Test;
 
-import static com.n11.test.helper.Consts.EMAIL_ERROR_MESSAGE;
-import static com.n11.test.helper.Consts.KEYWORD;
-import static com.n11.test.helper.Consts.PASSWORD_ERROR_MESSAGE;
+import static com.n11.test.helper.Consts.*;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
 
 public class N11TestCase extends BaseTest {
 

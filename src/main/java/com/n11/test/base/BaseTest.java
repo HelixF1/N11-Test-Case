@@ -1,12 +1,12 @@
-package com.n11.test.tests;
-
-import java.time.Duration;
+package com.n11.test.base;
 
 import com.n11.test.pages.N11HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import java.time.Duration;
 
 public class BaseTest {
 

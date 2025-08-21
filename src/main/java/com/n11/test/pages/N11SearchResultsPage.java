@@ -1,12 +1,13 @@
 package com.n11.test.pages;
 
-import java.util.List;
-
+import com.n11.test.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static com.n11.test.tests.BaseTest.getDriver;
-import static java.sql.DriverManager.getDriver;
+import java.util.List;
+
+import static com.n11.test.base.BaseTest.getDriver;
+
 
 public class N11SearchResultsPage extends BasePage {
 

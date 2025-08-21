@@ -1,5 +1,6 @@
 package com.n11.test.pages;
 
+import com.n11.test.base.BasePage;
 import org.openqa.selenium.By;
 
 public class N11BasketPage extends BasePage {
